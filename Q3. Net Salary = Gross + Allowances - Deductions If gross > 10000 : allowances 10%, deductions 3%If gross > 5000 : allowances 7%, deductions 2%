@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(){
+    float gross, allow, deduc, net;
+    
+    printf("Enter Gross Salary: ");
+    scanf("%f", &gross);
+    
+    if(gross > 10000){
+        allow = gross * 0.10;
+        deduc = gross * 0.03;
+    }
+    else if(gross > 5000){
+        allow = gross * 0.07;
+        deduc = gross * 0.02;
+    }
+    else{
+        allow = 0;
+        deduc = 0;
+    }
+    
+    net = gross + allow - deduc;
+    
+    printf("Allowances = %.2f\n", allow);
+    printf("Deductions = %.2f\n", deduc);
+    printf("Net Salary = %.2f", net);
+    
+    return 0;
+}
