@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    float a,b;
+    scanf("%f%f",&a,&b);
+    printf("Add=%f\nSub=%f\nMul=%f\nDiv=%f",a+b,a-b,a*b,a/b);
+    return 0;
+}
