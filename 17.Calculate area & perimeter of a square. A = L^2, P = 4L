@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    float l, area, peri;
+    
+    printf("Enter side L: ");
+    scanf("%f", &l);
+    
+    area = l * l;
+    peri = 4 * l;
+    
+    printf("Area = %.2f\n", area);
+    printf("Perimeter = %.2f", peri);
+    
+    return 0;
+}
